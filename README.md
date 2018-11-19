@@ -2,9 +2,11 @@
 **Using:**
 Ubuntu, WebStorm, HTML5, CSS, SASS, Foundation.
 
+**Spent time ~6-7 hours**
+
 **Pidasin silmas kui antud HTMLi tegin**
  - et kood oleks puhas ja "user readable"
- - Kasjtada rohkem Foundation-i ja vähem custom css-i
+ - Kasutada rohkem Foundation-i ja vähem custom css-i
  - kasutada HTML5 siis kui võimalik.
  
  
