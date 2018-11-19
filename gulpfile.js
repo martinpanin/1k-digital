@@ -9,7 +9,7 @@ var sassPaths = [
 ];
 
 function sass() {
-  return gulp.src('scss/app.scss')
+  return gulp.src('public/scss/app.scss')
     .pipe($.sass({
       includePaths: sassPaths,
       outputStyle: 'compressed' // if css compressed **file size**
@@ -18,16 +18,16 @@ function sass() {
     .pipe($.postcss([
       autoprefixer({ browsers: ['last 2 versions', 'ie >= 9'] })
     ]))
-    .pipe(gulp.dest('css'))
+    .pipe(gulp.dest('public/css'))
     .pipe(browserSync.stream());
-};
+}
 
 function serve() {
   browserSync.init({
     server: "./"
   });
 
-  gulp.watch("scss/*.scss", sass);
+  gulp.watch("public/scss/*.scss", sass);
   gulp.watch("*.html").on('change', browserSync.reload);
 }
 

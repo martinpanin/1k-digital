@@ -1,0 +1,82 @@
+/* Header block */
+header {
+    background-image: url("../etc/img/header.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+
+/* Main block */
+main {
+    background-color: #f6f5f3;
+
+}
+
+/* Newsletter block */
+article {
+    background-color: #323969;
+}
+
+/* Footer block */
+footer {
+    background-color: #232323;
+    color: #ababab;
+}
+
+/* Overall */
+.margin-auto {
+    margin: auto!important;
+}
+
+.font-bolder {
+    font-weight: bolder!important;
+}
+
+.primary-color {
+    color: #ff6d6d!important;
+}
+
+.gray-color {
+    color: #858584;
+}
+
+.dark-gray-color {
+    color: #767676;
+}
+
+.light-gray-color {
+    color: #b8b9c3;
+}
+
+.white-color {
+    color: #fff!important;
+}
+
+.full {
+   width: 100%!important;
+}
+
+.style-normal{
+    font-style: normal!important;
+}
+
+
+.round {
+    border-radius: 3px!important;
+}
+
+/* Certain elements */
+.play-btn{
+    border-radius: 60px!important;
+    font-size: 15pt!important;
+    color: white!important;
+    padding: 0.7em 1em!important;
+}
+
+li > a {
+    color: #767676;
+}
+
+
+
