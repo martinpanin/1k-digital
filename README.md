@@ -13,3 +13,10 @@ Ubuntu, WebStorm, HTML5, CSS, SASS, Foundation.
  **Nüanss**
  - Safari brauseri tegin väiksem kui teie antud failis, kuna pildi kvalteen oli päris madal. Kuid kui sellele lisada class="full" siis selle suurus on nagu teie näidisel.
  - Lehe testimi peab olema lokaalses või "dedicated" serveris, muidu pildid ja ikoonid ei pruugi ilmuda
+ 
+ ---
+ **2 osa**
+ 
+*Spent time ~4 hours*
+ 
+ Lisasin demo: [http://1k.coralself.com/](http://1k.coralself.com/)

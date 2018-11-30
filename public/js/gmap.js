@@ -8,7 +8,7 @@ function initMap(lat,lng) {
     // The map, centered at Uluru
     let map = new google.maps.Map(
         document.getElementById('map'), {
-            zoom: 2,
+            zoom: 4,
             center: {
                 lat: lat,
                 lng: lng
