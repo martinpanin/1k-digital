@@ -4,31 +4,33 @@ var $             = require('gulp-load-plugins')();
 var autoprefixer  = require('autoprefixer');
 
 var sassPaths = [
-  'node_modules/foundation-sites/scss',
-  'node_modules/motion-ui/src'
+    'node_modules/foundation-sites/scss',
+    'node_modules/motion-ui/src'
 ];
 
 function sass() {
-  return gulp.src('public/scss/app.scss')
-    .pipe($.sass({
-      includePaths: sassPaths,
-      outputStyle: 'compressed' // if css compressed **file size**
-    })
-      .on('error', $.sass.logError))
-    .pipe($.postcss([
-      autoprefixer({ browsers: ['last 2 versions', 'ie >= 9'] })
-    ]))
-    .pipe(gulp.dest('public/css'))
-    .pipe(browserSync.stream());
+    return gulp.src('public/scss/app.scss')
+        .pipe($.sass({
+            includePaths: sassPaths,
+            outputStyle: 'compressed' // if css compressed **file size**
+        })
+            .on('error', $.sass.logError))
+        .pipe($.postcss([
+            autoprefixer({ browsers: ['last 2 versions', 'ie >= 9'] })
+        ]))
+        .pipe(gulp.dest('public/css'))
+        .pipe(browserSync.stream());
 }
 
 function serve() {
-  browserSync.init({
-    server: "./"
-  });
+    browserSync.init({
+        server: "./"
+    });
 
-  gulp.watch("public/scss/*.scss", sass);
-  gulp.watch("*.html").on('change', browserSync.reload);
+    gulp.watch("public/scss/*.scss", sass);
+    gulp.watch("*.html").on('change', browserSync.reload);
+    gulp.watch("public/css/*.css").on('change', browserSync.reload);
+    gulp.watch("public/js/*.js").on('change', browserSync.reload);
 }
 
 gulp.task('sass', sass);

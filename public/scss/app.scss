@@ -15,14 +15,15 @@
 @include foundation-typography;
 @include foundation-button;
 @include foundation-forms;
+@include foundation-card;
+@include foundation-label;
+@include foundation-reveal;
 // @include foundation-range-input;
 /*@include foundation-accordion;
 @include foundation-accordion-menu;
-@include foundation-badge;
 @include foundation-breadcrumbs;
 @include foundation-button-group;
 @include foundation-callout;
-@include foundation-card;
 @include foundation-close-button;
 @include foundation-menu;
 @include foundation-menu-icon;
@@ -30,7 +31,7 @@
 @include foundation-dropdown;
 @include foundation-dropdown-menu;
 @include foundation-responsive-embed;
-@include foundation-label;
+@include foundation-badge;
 @include foundation-media-object;
 @include foundation-off-canvas;
 @include foundation-orbit;
@@ -38,7 +39,6 @@
 @include foundation-progress-bar;
 @include foundation-slider;
 @include foundation-sticky;
-@include foundation-reveal;
 @include foundation-switch;
 @include foundation-table;
 @include foundation-tabs;
