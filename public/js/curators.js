@@ -27,6 +27,7 @@ const getCurators = () => {
                         '</section>';
                     buttonCounter=i;
                 }
+
                 cardView = curators.length - cardView < 3 ? cardView + (curators.length - cardView) : cardView + 3;
                 if ((cardView === curators.length) && (buttonCounter === cardView - 1)) {
                     document.querySelector('#show-more').style.display="none";
